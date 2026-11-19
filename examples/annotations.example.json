@@ -1,0 +1,12 @@
+{
+  "reference_type": "human",
+  "annotator": "REPLACE with actual human annotator and labeling instructions",
+  "annotations": [
+    {
+      "slide": "../data/CMU-1-Small-Region.svs",
+      "mask": "annotations/region_001.png",
+      "region": {"x": 512, "y": 512, "width": 512, "height": 512},
+      "level": 0
+    }
+  ]
+}

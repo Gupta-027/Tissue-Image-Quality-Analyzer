@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "mode": "held_out_slide_experiment",
+  "seed": 42,
+  "split_description": "Calibration and evaluation are distinct source slides; all variants of an original remain in its split.",
+  "source_slides": [
+    {
+      "path": "data\\CMU-1-Small-Region.svs",
+      "slide_id": "CMU-1-Small-Region",
+      "source_id": "CMU-1",
+      "dimensions": [
+        2220,
+        2967
+      ],
+      "level": 0,
+      "downsample": 1.0,
+      "objective_power": "20",
+      "mpp_x": "0.499",
+      "mpp_y": "0.499",
+      "split": "calibration",
+      "spatial_half": null,
+      "eligible_grid_count": 16,
+      "selected_originals": 16,
+      "failed_or_ineligible_reads": []
+    },
+    {
+      "path": "data\\JP2K-33003-1.svs",
+      "slide_id": "JP2K-33003-1",
+      "source_id": "JP2K-33003-1",
+      "dimensions": [
+        15374,
+        17497
+      ],
+      "level": 0,
+      "downsample": 1.0,
+      "objective_power": "40",
+      "mpp_x": "0.24979999999999999",
+      "mpp_y": "0.24979999999999999",
+      "split": "evaluation",
+      "spatial_half": null,
+      "eligible_grid_count": 16,
+      "selected_originals": 16,
+      "failed_or_ineligible_reads": []
+    }
+  ],
+  "splits": {
+    "calibration": {
+      "original_tile_count": 16,
+      "group_ids": [
+        "CMU-1:1024:256:0",
+        "CMU-1:1280:2048:0",
+        "CMU-1:1024:2304:0",
+        "CMU-1:1024:768:0",
+        "CMU-1:1280:768:0",
+        "CMU-1:768:2304:0",
+        "CMU-1:1024:1024:0",
+        "CMU-1:1280:1024:0",
+        "CMU-1:1536:1792:0",
+        "CMU-1:768:2048:0",
+        "CMU-1:1024:1280:0",
+        "CMU-1:1280:1280:0",
+        "CMU-1:1280:1792:0",
+        "CMU-1:1024:1792:0",
+        "CMU-1:1280:2304:0",
+        "CMU-1:1280:1536:0"
+      ]
+    },
+    "evaluation": {
+      "original_tile_count": 16,
+      "group_ids": [
+        "JP2K-33003-1:5120:3840:0",
+        "JP2K-33003-1:12032:9728:0",
+        "JP2K-33003-1:13056:9984:0",
+        "JP2K-33003-1:2304:7936:0",
+        "JP2K-33003-1:5888:13056:0",
+        "JP2K-33003-1:9728:2816:0",
+        "JP2K-33003-1:2048:6912:0",
+        "JP2K-33003-1:3072:8704:0",
+        "JP2K-33003-1:6656:13568:0",
+        "JP2K-33003-1:10752:3584:0",
+        "JP2K-33003-1:10752:11520:0",
+        "JP2K-33003-1:3072:6656:0",
+        "JP2K-33003-1:2816:6912:0",
+        "JP2K-33003-1:8704:2560:0",
+        "JP2K-33003-1:11776:10496:0",
+        "JP2K-33003-1:6912:3072:0"
+      ]
+    }
+  },
+  "parameters": {
+    "level": 0,
+    "tile_size": 256,
+    "max_tiles_per_split": 16,
+    "sigmas_analysis_pixels": [
+      0.0,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "border_mode": "BORDER_REFLECT_101",
+    "gaussian_kernel": "OpenCV automatic (0,0) from sigma",
+    "segmentation": {
+      "method": "hsv",
+      "rgb_threshold": 235,
+      "saturation_threshold": 20,
+      "value_threshold": 245,
+      "morphology_size": 3
+    },
+    "minimum_thumbnail_tissue_fraction": 0.5,
+    "threshold_selection": "Maximum calibration balanced accuracy subject to original FPR <= 0.10; score < threshold is flagged."
+  },
+  "original_review": {
+    "all_visually_reviewed": true,
+    "manifest": "examples/original_review.json",
+    "reviewer": "Codex AI visual inspection of all 32 native-size 256x256 original crops in originals_contact_sheet.png on 2026-11-19; no pathologist review and no independent scanner focus truth",
+    "procedure": "Candidates were deterministically sampled from tissue before visual review. All 32 were retained because visible nuclear or connective-tissue boundaries appear resolved and no gross blur was apparent; low-texture aorta crops were deliberately retained. Sharpness judgement is subjective and must be replaced by expert/scanner labels for validation.",
+    "status": "Visually selected reference originals; no scanner focus truth."
+  },
+  "metrics": {
+    "laplacian": {
+      "threshold": 6127.678670805551,
+      "calibration": {
+        "original_tile_count": 16,
+        "blurred_variant_count": 48,
+        "sensitivity_to_injected_blur": 1.0,
+        "false_positive_rate_on_originals": 0.0,
+        "roc_auc": 1.0,
+        "by_sigma": [
+          {
+            "sigma": 0.0,
+            "variant_count": 16,
+            "flagged_count": 0,
+            "flagged_fraction": 0.0
+          },
+          {
+            "sigma": 1.0,
+            "variant_count": 16,
+            "flagged_count": 16,
+            "flagged_fraction": 1.0
+          },
+          {
+            "sigma": 2.0,
+            "variant_count": 16,
+            "flagged_count": 16,
+            "flagged_fraction": 1.0
+          },
+          {
+            "sigma": 4.0,
+            "variant_count": 16,
+            "flagged_count": 16,
+            "flagged_fraction": 1.0
+          }
+        ]
+      },
+      "evaluation": {
+        "original_tile_count": 16,
+        "blurred_variant_count": 48,
+        "sensitivity_to_injected_blur": 1.0,
+        "false_positive_rate_on_originals": 0.0,
+        "roc_auc": 1.0,
+        "by_sigma": [
+          {
+            "sigma": 0.0,
+            "variant_count": 16,
+            "flagged_count": 0,
+            "flagged_fraction": 0.0
+          },
+          {
+            "sigma": 1.0,
+            "variant_count": 16,
+            "flagged_count": 16,
+            "flagged_fraction": 1.0
+          },
+          {
+            "sigma": 2.0,
+            "variant_count": 16,
+            "flagged_count": 16,
+            "flagged_fraction": 1.0
+          },
+          {
+            "sigma": 4.0,
+            "variant_count": 16,
+            "flagged_count": 16,
+            "flagged_fraction": 1.0
+          }
+        ]
+      }
+    },
+    "tenengrad": {
+      "threshold": 24902.930314160512,
+      "calibration": {
+        "original_tile_count": 16,
+        "blurred_variant_count": 48,
+        "sensitivity_to_injected_blur": 0.9583333333333334,
+        "false_positive_rate_on_originals": 0.0625,
+        "roc_auc": 0.9752604166666666,
+        "by_sigma": [
+          {
+            "sigma": 0.0,
+            "variant_count": 16,
+            "flagged_count": 1,
+            "flagged_fraction": 0.0625
+          },
+          {
+            "sigma": 1.0,
+            "variant_count": 16,
+            "flagged_count": 14,
+            "flagged_fraction": 0.875
+          },
+          {
+            "sigma": 2.0,
+            "variant_count": 16,
+            "flagged_count": 16,
+            "flagged_fraction": 1.0
+          },
+          {
+            "sigma": 4.0,
+            "variant_count": 16,
+            "flagged_count": 16,
+            "flagged_fraction": 1.0
+          }
+        ]
+      },
+      "evaluation": {
+        "original_tile_count": 16,
+        "blurred_variant_count": 48,
+        "sensitivity_to_injected_blur": 1.0,
+        "false_positive_rate_on_originals": 0.875,
+        "roc_auc": 1.0,
+        "by_sigma": [
+          {
+            "sigma": 0.0,
+            "variant_count": 16,
+            "flagged_count": 14,
+            "flagged_fraction": 0.875
+          },
+          {
+            "sigma": 1.0,
+            "variant_count": 16,
+            "flagged_count": 16,
+            "flagged_fraction": 1.0
+          },
+          {
+            "sigma": 2.0,
+            "variant_count": 16,
+            "flagged_count": 16,
+            "flagged_fraction": 1.0
+          },
+          {
+            "sigma": 4.0,
+            "variant_count": 16,
+            "flagged_count": 16,
+            "flagged_fraction": 1.0
+          }
+        ]
+      }
+    }
+  },
+  "failure_example": {
+    "type": "generated_unblurred_low_texture_example",
+    "measured_benchmark": false,
+    "explanation": "No blur was applied; low texture alone yields low derivative energy. This illustrates a possible false alarm, not a measured clinical failure.",
+    "scores": {
+      "laplacian": 0.5710063656471784,
+      "tenengrad": 0.8368156736313472
+    },
+    "flagged": {
+      "laplacian": true,
+      "tenengrad": true
+    }
+  },
+  "measured_failure_examples": [
+    {
+      "slide_id": "JP2K-33003-1",
+      "x": 5120,
+      "y": 3840,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "sigma": 0,
+      "scores": {
+        "laplacian": 12730.946987860496,
+        "tenengrad": 16745.918097836195
+      },
+      "flagged_metrics": [
+        "tenengrad"
+      ],
+      "image": "reviewed_original_flagged.png",
+      "review_note": "Visible elongated nuclear or wavy connective-tissue boundaries; no gross blur apparent, including low-texture aorta areas.",
+      "interpretation": "Reviewed original flagged without injected blur: possible false alarm from tissue texture or cross-slide sampling differences. No scanner focus truth establishes its cause."
+    }
+  ],
+  "segmentation_evaluation": {
+    "status": "pending",
+    "reason": "No human masks supplied to this command. Run slideqc.evaluation with an annotation manifest."
+  },
+  "limits": [
+    "Gaussian blur approximates only one aspect of scanner defocus.",
+    "Reference originals have no independent scanner focus labels; visual review is not a clinical annotation.",
+    "Thresholds depend on analysis level/downsample, pixel resolution, stain, tissue texture, and mask settings.",
+    "Physical sampling is not normalized between slides; source metadata records objective power and microns per pixel. Different MPP can contribute to transfer failures.",
+    "Variants from one original are correlated; variant counts are not independent patient samples.",
+    "Small convenience sample supports an engineering demonstration, not clinical validation."
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "reviewer": "Codex AI visual inspection of all 32 native-size 256x256 original crops in originals_contact_sheet.png on 2026-11-19; no pathologist review and no independent scanner focus truth",
+  "tiles": [
+    {
+      "slide_id": "CMU-1-Small-Region",
+      "x": 1024,
+      "y": 256,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible nuclear boundaries and collagen or epithelial detail; no gross blur apparent at native crop size."
+    },
+    {
+      "slide_id": "CMU-1-Small-Region",
+      "x": 1280,
+      "y": 2048,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible nuclear boundaries and collagen or epithelial detail; no gross blur apparent at native crop size."
+    },
+    {
+      "slide_id": "CMU-1-Small-Region",
+      "x": 1024,
+      "y": 2304,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible nuclear boundaries and collagen or epithelial detail; no gross blur apparent at native crop size."
+    },
+    {
+      "slide_id": "CMU-1-Small-Region",
+      "x": 1024,
+      "y": 768,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible nuclear boundaries and collagen or epithelial detail; no gross blur apparent at native crop size."
+    },
+    {
+      "slide_id": "CMU-1-Small-Region",
+      "x": 1280,
+      "y": 768,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible nuclear boundaries and collagen or epithelial detail; no gross blur apparent at native crop size."
+    },
+    {
+      "slide_id": "CMU-1-Small-Region",
+      "x": 768,
+      "y": 2304,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible nuclear boundaries and collagen or epithelial detail; no gross blur apparent at native crop size."
+    },
+    {
+      "slide_id": "CMU-1-Small-Region",
+      "x": 1024,
+      "y": 1024,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible nuclear boundaries and collagen or epithelial detail; no gross blur apparent at native crop size."
+    },
+    {
+      "slide_id": "CMU-1-Small-Region",
+      "x": 1280,
+      "y": 1024,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible nuclear boundaries and collagen or epithelial detail; no gross blur apparent at native crop size."
+    },
+    {
+      "slide_id": "CMU-1-Small-Region",
+      "x": 1536,
+      "y": 1792,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible nuclear boundaries and collagen or epithelial detail; no gross blur apparent at native crop size."
+    },
+    {
+      "slide_id": "CMU-1-Small-Region",
+      "x": 768,
+      "y": 2048,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible nuclear boundaries and collagen or epithelial detail; no gross blur apparent at native crop size."
+    },
+    {
+      "slide_id": "CMU-1-Small-Region",
+      "x": 1024,
+      "y": 1280,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible nuclear boundaries and collagen or epithelial detail; no gross blur apparent at native crop size."
+    },
+    {
+      "slide_id": "CMU-1-Small-Region",
+      "x": 1280,
+      "y": 1280,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible nuclear boundaries and collagen or epithelial detail; no gross blur apparent at native crop size."
+    },
+    {
+      "slide_id": "CMU-1-Small-Region",
+      "x": 1280,
+      "y": 1792,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible nuclear boundaries and collagen or epithelial detail; no gross blur apparent at native crop size."
+    },
+    {
+      "slide_id": "CMU-1-Small-Region",
+      "x": 1024,
+      "y": 1792,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible nuclear boundaries and collagen or epithelial detail; no gross blur apparent at native crop size."
+    },
+    {
+      "slide_id": "CMU-1-Small-Region",
+      "x": 1280,
+      "y": 2304,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible nuclear boundaries and collagen or epithelial detail; no gross blur apparent at native crop size."
+    },
+    {
+      "slide_id": "CMU-1-Small-Region",
+      "x": 1280,
+      "y": 1536,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible nuclear boundaries and collagen or epithelial detail; no gross blur apparent at native crop size."
+    },
+    {
+      "slide_id": "JP2K-33003-1",
+      "x": 5120,
+      "y": 3840,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible elongated nuclear or wavy connective-tissue boundaries; no gross blur apparent, including low-texture aorta areas."
+    },
+    {
+      "slide_id": "JP2K-33003-1",
+      "x": 12032,
+      "y": 9728,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible elongated nuclear or wavy connective-tissue boundaries; no gross blur apparent, including low-texture aorta areas."
+    },
+    {
+      "slide_id": "JP2K-33003-1",
+      "x": 13056,
+      "y": 9984,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible elongated nuclear or wavy connective-tissue boundaries; no gross blur apparent, including low-texture aorta areas."
+    },
+    {
+      "slide_id": "JP2K-33003-1",
+      "x": 2304,
+      "y": 7936,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible elongated nuclear or wavy connective-tissue boundaries; no gross blur apparent, including low-texture aorta areas."
+    },
+    {
+      "slide_id": "JP2K-33003-1",
+      "x": 5888,
+      "y": 13056,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible elongated nuclear or wavy connective-tissue boundaries; no gross blur apparent, including low-texture aorta areas."
+    },
+    {
+      "slide_id": "JP2K-33003-1",
+      "x": 9728,
+      "y": 2816,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible elongated nuclear or wavy connective-tissue boundaries; no gross blur apparent, including low-texture aorta areas."
+    },
+    {
+      "slide_id": "JP2K-33003-1",
+      "x": 2048,
+      "y": 6912,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible elongated nuclear or wavy connective-tissue boundaries; no gross blur apparent, including low-texture aorta areas."
+    },
+    {
+      "slide_id": "JP2K-33003-1",
+      "x": 3072,
+      "y": 8704,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible elongated nuclear or wavy connective-tissue boundaries; no gross blur apparent, including low-texture aorta areas."
+    },
+    {
+      "slide_id": "JP2K-33003-1",
+      "x": 6656,
+      "y": 13568,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible elongated nuclear or wavy connective-tissue boundaries; no gross blur apparent, including low-texture aorta areas."
+    },
+    {
+      "slide_id": "JP2K-33003-1",
+      "x": 10752,
+      "y": 3584,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible elongated nuclear or wavy connective-tissue boundaries; no gross blur apparent, including low-texture aorta areas."
+    },
+    {
+      "slide_id": "JP2K-33003-1",
+      "x": 10752,
+      "y": 11520,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible elongated nuclear or wavy connective-tissue boundaries; no gross blur apparent, including low-texture aorta areas."
+    },
+    {
+      "slide_id": "JP2K-33003-1",
+      "x": 3072,
+      "y": 6656,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible elongated nuclear or wavy connective-tissue boundaries; no gross blur apparent, including low-texture aorta areas."
+    },
+    {
+      "slide_id": "JP2K-33003-1",
+      "x": 2816,
+      "y": 6912,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible elongated nuclear or wavy connective-tissue boundaries; no gross blur apparent, including low-texture aorta areas."
+    },
+    {
+      "slide_id": "JP2K-33003-1",
+      "x": 8704,
+      "y": 2560,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible elongated nuclear or wavy connective-tissue boundaries; no gross blur apparent, including low-texture aorta areas."
+    },
+    {
+      "slide_id": "JP2K-33003-1",
+      "x": 11776,
+      "y": 10496,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible elongated nuclear or wavy connective-tissue boundaries; no gross blur apparent, including low-texture aorta areas."
+    },
+    {
+      "slide_id": "JP2K-33003-1",
+      "x": 6912,
+      "y": 3072,
+      "level": 0,
+      "analysis_width": 256,
+      "analysis_height": 256,
+      "appears_sharp": true,
+      "note": "Visible elongated nuclear or wavy connective-tissue boundaries; no gross blur apparent, including low-texture aorta areas."
+    }
+  ],
+  "procedure": "Candidates were deterministically sampled from tissue before visual review. All 32 were retained because visible nuclear or connective-tissue boundaries appear resolved and no gross blur was apparent; low-texture aorta crops were deliberately retained. Sharpness judgement is subjective and must be replaced by expert/scanner labels for validation."
+}

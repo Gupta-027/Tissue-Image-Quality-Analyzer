@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>
+body {margin:0;font:14px system-ui,sans-serif;color:#172b2a}
+img {display:block;width:100%;height:auto;cursor:crosshair}
+#hint {padding:6px 2px;line-height:1.4}
+</style></head><body>
+<img id="slide" alt="Slide thumbnail with tissue tile overlay. Click a visited tile to inspect it; the results table also supports selection.">
+<div id="hint" aria-live="polite">Click a visited tile to inspect it. Unoutlined areas have not been visited.</div>
+<script>
+const pic=document.getElementById('slide'); let tiles=[], disabled=false, clickSequence=0;
+function send(type,extra={}) {window.parent.postMessage({isStreamlitMessage:true,type,...extra},'*')}
+function resize(){send('streamlit:setFrameHeight',{height:document.body.scrollHeight})}
+window.addEventListener('message', event=>{
+ if(event.data.type!=='streamlit:render') return;
+ const args=event.data.args; tiles=args.tiles;disabled=event.data.disabled;
+ if(pic.src!==args.image) pic.src=args.image;
+ resize();
+});
+pic.onload=resize;
+pic.addEventListener('click',event=>{
+ if(disabled)return;
+ const box=pic.getBoundingClientRect();
+ const x=(event.clientX-box.left)*pic.naturalWidth/box.width;
+ const y=(event.clientY-box.top)*pic.naturalHeight/box.height;
+ // Float bounds form a half-open partition, so no edge can select two tiles.
+ const tile=tiles.find(t=>x>=t.x0&&x<t.x1&&y>=t.y0&&y<t.y1);
+ if(tile) send('streamlit:setComponentValue',{value:{tile_id:tile.id,sequence:++clickSequence}});
+ else document.getElementById('hint').textContent='This area has not been visited. Increase the grid tile limit and run analysis.';
+});
+new ResizeObserver(resize).observe(document.body);
+send('streamlit:componentReady',{apiVersion:1});
+</script></body></html>
